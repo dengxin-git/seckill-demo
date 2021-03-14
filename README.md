@@ -1,4 +1,4 @@
-# seckill-demo2
+# seckill-demo
 这是一个简易的秒杀系统，使用了一些简单的秒杀思想
 
 第一次秒杀:
