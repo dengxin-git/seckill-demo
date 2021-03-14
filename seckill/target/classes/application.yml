@@ -1,0 +1,25 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /seckill
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/seckill_two?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+  redis:
+    database: 0
+    port: 6379
+    host: localhost
+
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.dengxin.seckill.entity
+
+logging:
+  level:
+    com.dengxin.seckill.mapper: debug
